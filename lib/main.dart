@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:nextui/facebook_home/pages/f_home_page.dart';
+import 'package:nextui/animated_drawer/page/a_main_screen.dart';
 
 void main() {
-  SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(statusBarColor: Colors.white));
+  // SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+  //   statusBarColor: Colors.white,
+  // ));
   runApp(const MyApp());
 }
 
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: 'Next-UI',
       debugShowCheckedModeBanner: false,
-      home: FHomePage(),
+      home: AMainScreen(),
     );
   }
 }
