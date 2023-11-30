@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nextui/animated_drawer/page/a_main_screen.dart';
+import 'package:nextui/scroll_view/s_home.dart';
 
 void main() {
   // SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: 'Next-UI',
       debugShowCheckedModeBanner: false,
-      home: AMainScreen(),
+      home: SHome(),
     );
   }
 }
