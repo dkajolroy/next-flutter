@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:nextui/scroll_view/s_home.dart';
+import 'package:flutter/services.dart';
+import 'package:nextui/daraz/daraz_home.dart';
 
 void main() {
-  // SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-  //   statusBarColor: Colors.white,
-  // ));
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+    statusBarColor: Colors.transparent,
+  ));
   runApp(const MyApp());
 }
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: 'Next-UI',
       debugShowCheckedModeBanner: false,
-      home: SHome(),
+      home: DarazHome(),
     );
   }
 }
